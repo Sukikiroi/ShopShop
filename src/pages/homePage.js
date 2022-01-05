@@ -9,7 +9,16 @@ import SectionDesktop from "../containers/desktop/section";
 //packages
 import { isMobile } from "react-device-detect";
 
-const homePage = () => {
+
+// HOCs
+import { useGetPokemonByNameQuery } from '../services/pokemon'
+
+
+
+const HomePage = () => {
+
+  const { data, error, isLoading } = useGetPokemonByNameQuery('bulbasaur')
+  console.log(data)
   return (
     <div>
       {isMobile ? <NavbarMobile /> : <NavbarDesktop />}
@@ -19,4 +28,4 @@ const homePage = () => {
   );
 };
 
-export default homePage;
+export default HomePage;
