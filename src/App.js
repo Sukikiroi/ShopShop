@@ -7,6 +7,7 @@ import LoginPage from "./pages/loginRegisterPage";
 import CartPage from "./pages/cartPage";
 import ProductPage from "./pages/productPage";
 import CheckoutPage from "./pages/checkoutPage";
+import RegisterPage from "./pages/registerPage";
 
 //packages
 import { render } from "react-dom";
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="/productpage" element={<ProductPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/cart" element={<CartPage />} />
