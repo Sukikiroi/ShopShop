@@ -45,14 +45,10 @@ const Section = () => {
   const classes = useStyles();
 
 
-  const cart = useSelector((state) => state.cartstore.shopingcart);
- console.log(cart)
+ 
   return (
       <>
     
-      <Badge badgeContent=  {cart.length} color="success">
-        <ShoppingCartIcon color="action" />
-      </Badge>
     <div className={classes.root}>
   
   {products.map((product) => (

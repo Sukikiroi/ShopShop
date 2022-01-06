@@ -81,7 +81,8 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems:'center'
+    alignItems:'center',
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
   },
 
   rootimage: {
