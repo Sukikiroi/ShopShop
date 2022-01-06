@@ -18,11 +18,11 @@ const HomePage = () => {
   console.log(data);
   return (
     <div>
-      {isMobile ? <NavbarMobile /> : <NavbarDesktop />}
-      {isMobile ? "" : <CategorySection />}
-
+      {/* {isMobile ? <NavbarMobile /> : <NavbarDesktop />}
+      {isMobile ? "" : <CategorySection />} */}
+ 
       {isMobile ? <SectionMobile /> : <SectionDesktop />}
-      <NavigationMobile />
+      {/* <NavigationMobile /> */}
     </div>
   );
 };
