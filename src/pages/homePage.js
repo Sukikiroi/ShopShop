@@ -6,6 +6,8 @@ import NavigationMobile from "../components/mobile/navigationMobile";
 import SectionMobile from "../containers/mobile/section";
 import SectionDesktop from "../containers/desktop/section";
 import CategorySection from "../containers/desktop/categorySection";
+import CarouselMui from '../components/desktop/carouselMui.js'
+
 
 //packages
 import { isMobile } from "react-device-detect";
@@ -23,6 +25,10 @@ const HomePage = () => {
  
       {isMobile ? <SectionMobile /> : <SectionDesktop />}
       {/* <NavigationMobile /> */}
+<div style={{backgroundColor:'teal',width:'700px',height:'350px'}}>
+<CarouselMui/>
+</div>
+     
     </div>
   );
 };
